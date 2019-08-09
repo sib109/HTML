@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: #a2b9bc
+    }
+  </style>
+  <title>Weather Summary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <style>
+    img {
+      float: left;
+        }
+    h1 {
+      background:white;
+      font-family: Helvetica;
+      font-size: 32px;
+      color:#7DBBC3;
+      text-align-last: auto;
+      }
+      h2 {
+        background:white;
+        font-family: Helvetica;
+        font-size: 24px;
+        color:#7DBBC3;
+        text-align-last: auto;
+        }
+    .column {
+      float: left;
+      padding: 10px;
+         }
+.my-gallery .col-xs-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    column-fill: auto
+}
+.my-gallery .col-xs-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    column-fill: auto;
+}
+  </style>
+  <nav class="navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" title=Home ><h4><strong>Latitude</strong></h4></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plot <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="latitude_vs_temperature_dtl.html">vs Temperature</a></li>
+            <li><a href="latitude_vs_humidity_dtl.html">vs Humidity</a></li>
+            <li><a href="latitude_vs_cloudiness_dtl.html">vs Cloudiness</a></li>
+            <li><a href="latitute_vs_windspeed_dtl.html">vs Windspeed</a></li>
+          </ul>
+        </li>
+        <li> <a href="comparison.html">Compare</a></li>
+        <li><a href="city_data.html">Data</a></li>
+      </ul>
+    </div>
+  </nav>
+  </br>
+  </br>
+  <div class="gallery">
+    <div class="col-xs-8" >
+      <h2><b>Summary: Latitude vs. Temperature</b></h2>
+      <hr>
+      <p><img src="output_data/Temperature.pdf" alt="Max" style="width:360px;height:270px;margin-right:15px;">
+      <br>
+      <p style="font-size:16px;">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API, to assemble a dataset on over 500 cities.
+      <br>
+      <br>
+      After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:<br>
+      <br>
+      Temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+      </p>
+    </div>
+    <div class="col-xs-4">
+      <h1><b>Visualizations</b></h1>
+      <hr>
+      <div class="row">
+          <div class="column">
+            <a href="latitude_vs_temperature_dtl.html"><img src="output_data/Temperature.pdf" alt="Maxtemp" style="width:240px;height:180px;" title="Latitude Vs Temperature Click for Details"usemap="#lattemp"></a>
+          </div>
+          <div class="column">
+            <a href="latitude_vs_humidity_dtl.html"><img src="output_data/Humidity.pdf" alt="Humidity" style="width:240px;height:180px;" title="Latitude Vs Humidity Click for Details" usemap="#lathumid"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <a  href="latitude_vs_cloudiness_dtl.html"><img src="output_data/Cloudiness.pdf" alt="Cloudiness" style="width:240px;height:180px;" title="Latitude Vs Cloudiness Click for Details"usemap="#latcloud"></a>
+          </div>
+          <div class="column">
+            <a href="latitute_vs_windspeed_dtl.html"><img src="output_data/Windspeed.pdf" alt="Windspeed" style="width:240px;height:180px;" title="Latitude Vs Windspeed Click for Details"usemap="#latwind"></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+h1 {
+  background:#fdfdfd;
+  font-family: Helvetica;
+  font-size: 32px;
+  color:#7DBBC3;
+  text-align-last: auto;
+}
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar-default">
+
+    <div class="container-fluid">
+
+       <div class="navbar-header">
+
+        <a class="navbar-brand" href="index.html" title=Home >Latitude</a>
+
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plot <span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="latitude_vs_temperature_dtl.html">vs Max Temperature</a></li>
+
+            <li><a href="latitude_vs_humidity_dtl.html">vs Humidity</a></li>
+
+            <li><a href="latitude_vs_cloudiness_dtl.html">vs Cloudiness</a></li>
+
+            <li><a href="latitute_vs_windspeed_dtl.html">vs Wind Speed</a></li>
+
+          </ul>
+
+        </li>
+
+        <li> <a href="comparison.html">Compare</a></li>
+
+        <li><a href="city_data.html">Data</a></li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <h1><b>&nbsp&nbsp Comparison: Latitude vs Cloudiness</b></h1>
+  <hr >
+
+	<p style='text-align: center'>
+
+	<img src="output_data/Cloudiness.pdf" width = "360" height= "270">
+</p>Cloudiness data is scattered and no definite conclusion can be drawn from this.
+  <p style="font-size:16px;">
+  </p>
+
+</body>
+</html>
